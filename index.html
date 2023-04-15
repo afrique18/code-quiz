@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-        <title>Coding Quiz Challenge</title>
-        <link rel="stylesheet" href="./assets/css/style.css"/>
-    </head>
-    <body>
-        <header>
-            <a href="#score-bank">View high scores</a>
-            <div id="timer">Time: 90</div>
-        </header>
-        <br>
-        <main>
-            <div id="cover-page">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Quiz Challenge</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <a href="#score-bank">View high scores</a>
+        <div id="timer">Time: 90</div>
+    </header>
+    <br>
+    <main>
+        <div id="cover-page">
             <h3>Coding Quiz</h3>
             <p>
                 Try to answer the following code-related questions within the time limit. <br>
@@ -22,36 +24,39 @@
                 each incorrect answer will penalize your time by ten (10) seconds. <br>
                 Click start when you are ready.
             </p>
-            </div>
+            <button class="start-quiz" type="button">start</button>
 
-            <div class="quiz">
-                <h3 class="ask"></h3>
-                <div id="choices">
-                    <div class="choice 1"></div>
-                    <div class="choice 2"></div>
-                    <div class="choice 3"></div>
-                    <div class="choice 4"></div>
-                </div>
-            </div>
+        </div>
 
-            <div class="high-score">
-                <h3>All done!</h3>
-                <div class="final-score"></div>
-                <br>
-                <div>Enter initials:</div>
-                <input type="text" name="initials" id="initials">
-                <btn class="submit">submit</btn>
+        <div id="quiz" class="d-none">
+            <h3 class="ask"></h3>
+            <div id="choices">
+                <div class="choice 1"></div>
+                <div class="choice 2"></div>
+                <div class="choice 3"></div>
+                <div class="choice 4"></div>
             </div>
+        </div>
 
-            <div class="correct">Correct</div>
-            <div class="wrong">Wrong!</div>
-            <div id="score-bank"></div>
-                <h3>High Scores</h3>
-                <ol id="score-data"></ol>
-                <btn class="Go back"></btn>
-                <btn class="clear">Clear high scores</btn>
-            </div>
-        </main>
-        <script src="#"></script>
-    </body>
+        <div id="high-score" class="d-none">
+            <h3>All done!</h3>
+            <div class="final-score"></div>
+            <br>
+            <div>Enter initials:</div>
+            <input type="text" name="initials" id="initials">
+            <btn class="submit">submit</btn>
+        </div>
+
+        <div class="message"></div>
+        <div class="wrong">Wrong!</div>
+        <div id="score-bank"></div>
+        <h3>High Scores</h3>
+        <ol id="score-data"></ol>
+        <btn class="Go back"></btn>
+        <btn class="clear">Clear high scores</btn>
+        </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+
 </html>
