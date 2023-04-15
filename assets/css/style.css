@@ -1,0 +1,29 @@
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: default;
+}
+
+header {
+    height: 75px;
+}
+
+header a {
+    float: left;
+    padding: 25px;
+    color: #361E75;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkorchid;
+}
+
+#timer {
+    float: right;
+    padding: 25px;
+}
+
