@@ -18,23 +18,23 @@ var userAnswer = ""
 var starrtQuiz = document.querySelector(".start-quiz")
 var questions = [
     {
-        question: "question1",
-        answers: ["answer1", "answer2", "answer3", "answer4"],
+        question: "1. String values must be enclosed within ______ when being assigned to values.",
+        answers: ["1. parenthesis", "2. curly brackets", "3. quotes","4. all of the above"],
         rightAnswer: "answer3"
     },
     {
-        question: "question2",
-        answers: ["answer1", "answer2", "answer3", "answer4"],
+        question: "2. Arrays in JavaScript can be used to store ______.",
+        answers: ["1. Numbers and strings", "2. booleans", "3. Other arrays", "4. All of the above"],
         rightAnswer: "answer4"
     },
     {
-        question: "question2",
-        answers: ["answer1", "answer2", "answer3", "answer4"],
+        question: "3. Commonly used data types DO NOT include:",
+        answers: ["1. numbers", "2. alerts", "3. booleans", "4. strings"],
         rightAnswer: "answer2"
     },
     {
-        question: "question4",
-        answers: ["answer1", "answer2", "answer3", "answer4"],
+        question: "4. The condition in an if/else statement is enclosed with ______.",
+        answers: ["1. parenthesis", "2. square brackets", "3. booleans", "4. curly brackets"],
         rightAnswer: "answer1"
     },
 ]
