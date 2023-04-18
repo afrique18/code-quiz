@@ -1,4 +1,4 @@
-
+//variable to start quiz //
 var timeEl = document.querySelector ("#timer");
 var timeLeft = 90;
 var timerInterval = 0;
@@ -16,6 +16,8 @@ var highScore = 0
 var questionNumber = 0
 var rightAnswer = ""
 var userAnswer = ""
+
+//quiz and answer key 
 var questions = [
     {
         question: "1. String values must be enclosed within ______ when being assigned to values.",
@@ -93,6 +95,8 @@ setTimeout(() => {
 }, 500);
     }
 })
+
+//assess user input for correct/incorrect answers and log scores //
 
 option1.addEventListener("click", select1);
 function select1() {
@@ -186,7 +190,7 @@ function select4() {
 
 };
 
-
+// log finished time
 var finalScore = document.querySelector(".finalScore");
 var highScore = document.querySelector(".highScore");
 function logScore() {
@@ -205,11 +209,13 @@ function hideFeedback() {
     incorrect.setAttribute("style", "display:none");
 };
 
+// code in local storage //
 var scoreArray = [];
 function setScore () {
     localStorage.setItem("local-scoreArray", JSON.stringify(scoreArray));
 }
 
+// call function to push scores into local storage //
 var submit = document.querySelector(".submit");
 var viewScores = document.querySelector("a");
 var scoreBankEL = document.querySelector("#score-bank");
@@ -232,7 +238,8 @@ function highScoreLog() {
     renderScores
 };
 
-var scoreDataEl =document.querySelector("#scoredata");
+// display scores on page //
+var scoreDataEl = document.querySelector("#scoredata");
 function renderScores() {
     for (var i = 0; i < scoreArray.length; i++) {
         var score = scoreArray[i];
@@ -245,17 +252,20 @@ function renderScores() {
 
 getScores();
 
+// reloads webpage //
 var goBack = document.querySelector(".back");
 goBack.addEventListener("click", function() {
     location.reload()
 });
 
+// clears scores from display and local storage
 var clearScores = document.querySelector(".clear");
 clearScores.addEventListener("click", function() {
     scoreDataEl.innerHTML="";
     localStorage.clear();
 });
 
+// navigates to high score page //
 viewScores.addEventListener("click", function() {
     highScore.setAttribute("style", "display:none");
     timeEl.setAttribute("style", "display:none");
