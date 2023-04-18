@@ -4,6 +4,7 @@
     cursor: default;
 }
 
+/* Styles header */
 header {
     height: 75px;
 }
@@ -27,6 +28,7 @@ a:hover {
     padding: 25px;
 }
 
+/* styles cover page */
 #cover-page {
 text-align: center;
 }
@@ -44,6 +46,8 @@ text-align: center;
     background-color: blueviolet;
 }
 
+/* styling for quiz */
+
 .quiz {
     margin: left 25%;
     margin: right 25%;
@@ -51,7 +55,7 @@ text-align: center;
     display: none;
 }
 .ask {
-    margin: 4px;
+    margin: 5px;
     height: 50px;
 }
 
@@ -66,6 +70,14 @@ text-align: center;
     display: block;
     background-color: #361E75;
     color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+
+.choice1:hover, .choice2:hover, .choice3:hover, .choice4:hover {
+    background-color: blueviolet;
+    
 }
 
 .d-none {
@@ -74,4 +86,133 @@ text-align: center;
 
 .d-block {
     display: block;
+}
+
+.correct, .incorrect {
+    text-align: right;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 25px;
+    border-top: solid 1px #4e2626;
+    color: #4e2626;
+    opacity: 0.5;
+    display: none;
+}
+
+.high-score {
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    display: none;
+}
+
+.high-score h3 {
+    margin: 0.5px;
+    padding-bottom: 10px;
+}
+.finalscore {
+    padding-bottom: 10px;
+}
+
+.high-score div {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.submit {
+    margin-left: 5px;
+    padding: 5px;
+    background-color: #361E75;
+    color: blanchedalmond;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.submit:hover {
+    background-color: #361E75;
+}
+
+#score-bank {
+    text-align: left;
+    margin-left: 33%;
+    margin-right: 33%;
+    display: none;
+}
+
+#score-bank h3 {
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+
+#scoredata {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    width: 100%:   
+}
+
+#scoredata li {
+    background-color: #d7bfdc;
+}
+
+#scoredata li:nth-child(odd){
+    background-color: #f5f2b9;  
+}
+
+.back, .clear {
+    padding: 5px;
+    background-color: #361E75;
+    color: #ffffff;
+}
+
+.back:hover, .clear:hover {
+    background-color: darkorchid;
+}
+
+.back {
+    margin-right: 5px;
+}
+
+/* media queries for tablet*/
+
+@media screen and (max-width: 992px) {
+    #cover-page p{
+        margin-bottom: 25px;
+    }   
+
+    .quiz, .high-score, .correct, .incorrect, {
+        margin-left: 15%;
+        margin-right: 15%;
+     }
+}
+
+/* media queries for cellphones */
+
+@media screen and (max-width: 778px) {
+    #cover-page p {
+        margin-bottom: 25px;
+    }   
+ .quiz, .high-score, .correct, .incorrect, #score-bank {
+    margin-left: 5%;
+    margin-right: 5%;
+ }
+
+ .ask {
+    font-size: medium;
+    height: 60px;
+ }
+
+ input {
+    margin-bottom: 15px;
+ }
+
+ #scoredata {
+    width: 90%;
+ }
+
+ .back, .clear {
+    display: block;
+    width: max-content;
+ }
 }
