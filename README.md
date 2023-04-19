@@ -29,3 +29,8 @@ THEN I can save my initials and my score
 
 ## Screenshot
 ![Alt text](./assets/images/Screenshot%202023-04-18%20at%2010.08.58%20PM.png)
+
+## URLs
+<li>GitHub repository: https://github.com/afrique18/code-quiz</li>
+<li>Deployed application: https://afrique18.github.io/code-quiz/</li>
+
